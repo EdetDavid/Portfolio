@@ -1,0 +1,292 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dvooskid.net</title>
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/font-awesome/all.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/font-awesome/fontawesome.min.css' %}" />
+  <link rel="stylesheet" href=" {% static 'assets/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/master.css' %}" />
+
+  <script src="{% static 'assets/js/chart.js' %} "></script>
+
+  <style>
+    @media (max-width: 500px) {
+      #socials a i {
+        font-size: 16px !important;
+      }
+
+      #socials a {
+        margin: 0 5px !important;
+      }
+    }
+
+    #socials a i.fa-brands {
+      font-size: 35px !important;
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <!-- Preloader -->
+  <div>
+    <img id="preloader"
+    src="{% static 'assets/Img/Bounce-Bar-Preloader-1.gif' %}" alt="">
+
+    <div class="container-flex">
+      <!-- preloader delay -->
+      <div class="d-flex d-none">
+        <!-- <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe> -->
+      </div>
+
+      <!-- end -->
+      <nav id="nav" class="navbar navbar-expand-md navbar-light bg-primary w-100">
+        <div class="container">
+          <a class="navbar-brand" href="">Dvooskid.net</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item link__hover">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item link__hover">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <!-- dropdown -->
+              <li class="nav-item dropdown link__hover">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">Home</a></li>
+                  <li><a class="dropdown-item" href="about">About</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="projects">Projects</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- end -->
+      <!-- showcase  -->
+      <div id="container">
+        <section er mx-a mx-sm-2uto justify-content-center align-items-center">
+          <div id="showcase" class="d-flex gap-lg-5 offset-lg-1 justify-content-between align-items-center">
+            <!-- col 1 -->
+            <div id="showcase__text" class="col-md-6 justify-content-start">
+              <!-- greetings -->
+              <div class="d-flex my-4">
+                <h2 class="text-primary m-2 my-4">Hi, I'm David</h2>
+              </div>
+              <!-- Title  -->
+              <div class="d-flex my-4">
+                <h1 class="text-light text-wrap">
+                  I am a Fullstack Developer with the aim to Rule the Tech
+                  Multiverse.
+                </h1>
+              </div>
+              <!-- text quote -->
+              <div class="d-flex my-4">
+                <h3 class="text-lead text-white">
+                  Multidisciplinary designer who aims at becoming the world 🌍
+                  <b> Best </b> Web developer.
+                  <a href="https://github.com/EdetDavid">
+                    github.com/EdetDavid
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <!-- col 2 -->
+            <div class="col-md-4">
+              <img id="showcase__image"
+                class="scale-up-center w-100 img-thumbnail shadow img-fluid rounded-pill d-flex justify-content-center align-items-center"
+                src="{% static './assets/images/frosh.png' %}" alt="showcase-img" />
+            </div>
+          </div>
+        </section>
+
+        <!-- My skills      -->
+        <section class="container skills">
+          <h2 class="text-center my-2 text-decoration-underline my-5">
+            <a type="button" class="text-warning" href="#myskills">
+              My Skills</a>
+          </h2>
+          <div id="myskills" class="container d-flex align-items-center justify-content-center">
+            <div class="_card">
+              <h4>Html & Css</h4>
+              <img src="{% static './assets/images/download (5).png' %}" width="" height="60px" alt="" />
+            </div>
+
+            <div class="_card">
+              <h4>Javascript</h4>
+              <img src="{% static './assets/images/javascript.png' %}" width="" height="60px" alt="" />
+            </div>
+            <div class="_card">
+              <h4>Node.js</h4>
+              <img src="{% static './assets/images/node.png' %}" width="" height="60px" alt="" />
+            </div>
+            <div class="_card">
+              <h4>Django</h4>
+              <img src="{% static './assets/images/django.png' %}" class="w-75" width="59px" height="60px" alt="" />
+            </div>
+            <div class="_card">
+              <h4>Python</h4>
+              <img src="{% static './assets/images/python.jpeg' %}" width="55px" height="60px" alt="" />
+            </div>
+
+            <div class="_card">
+              <h4>Wordpress</h4>
+              <img src="{% static './assets/images/wordpress.png' %}" width="100px" height="65px" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- skills mobile -->
+        <section class="p-lg-5 p-md-3 p-sm-2 p-xs-1">
+          <div id="skills__mobile" class="d-none flex-row flex-wrap justify-content-center align-items-center">
+            <!-- card 1 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Html & Css</h4>
+              <img src="{% static './assets/images/download (5).png' %}" width="" height="60px" alt="" />
+            </div>
+            <!-- card 2 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Javascript</h4>
+              <img src="{% static './assets/images/javascript.png' %}" width="" height="60px" alt="" />
+            </div>
+            <!-- card 3 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Node.js</h4>
+              <img src="{% static './assets/images/node.png' %}" width="" height="60px" alt="" />
+            </div>
+            <!-- card 4 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Django</h4>
+              <img src="{% static './assets/images/django.png' %}" class="w-75" width="59px" height="60px" s alt="" />
+            </div>
+            <!-- card 5 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Python</h4>
+              <img src="{% static './assets/images/python.jpeg' %}" width="" height="60px" alt="" />
+            </div>
+            <!-- card 6 -->
+            <div class="_card w-50 d-flex flex-column justify-content-center align-items-center">
+              <h4>Wordpress</h4>
+              <img src="{% static './assets/images/wordpress.png' %}" width="100px" height="65px" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Skill Chart -->
+        <section class="p-3 mb-4 w-75 mx-a mx-sm-auto img-fluid">
+          <div class="container bg-dark">
+            <div class="chart">
+              <canvas id="barchart"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact  -->
+
+      <section id="contact" class="p-0 mb-5">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-between align-items-center">
+            <!-- Contact header -->
+            <h1 class="text-white shadow text-center">Contact</h1>
+
+            {% for message in messages%}
+
+            <h4 class="text-danger">{{message}}</h4>
+
+            {% endfor %}
+            <!-- form  -->
+            <form method="post" action="/" class="bg-white p-3" style="width: 500px; border-radius: 1rem">
+              {% csrf_token %}
+              <input type="text" class="form-control mb-2" name="name" placeholder="Enter Name" required />
+              <input type="email" class="form-control mb-2" name="email" placeholder="Enter Email" required />
+              <input type="text" class="form-control mb-3" name="phone" placeholder="Enter Phone" required />
+              <label id="label_message" for="message">Write to us...</label>
+              <textarea id="message" rows="5" cols="61" name="message">
+              </textarea>
+              <input class="btn btn-primary" type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- socials -->
+      <div id="socials" class="d-flex justify-content-center align-items-center p-3">
+        <a class="text-decoration-none mx-3 mx-sm-2" href="https://github.com/EdetDavid"><i
+            class="fa-brands fa-github text-light"></i>
+        </a>
+        <a class="text-decoration-none mx-3 mx-sm-2" href="https://www.facebook.com/profile.php?id=100080024666123"><i
+            class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="text-decoration-none mx-3 mx-sm-2"
+          href="https://www.instagram.com/invites/contact/?i=rujib2gio5dh&utm_content=oemfdo8"><i
+            class="fa-brands fa-instagram text-danger"></i>
+        </a>
+        <a class="text-decoration-none mx-3 mx-sm-2"
+          href="https://twitter.com/EdetDavid11?t=i_WtANegfI_txRiYN7UBhQ&s=09"><i
+            class="fa-brands fa-twitter text-info"></i>
+        </a>
+        <a class="text-decoration-none mx-3 mx-sm-2" href="https://www.linkedin.com/in/david-edet-19413024a"><i
+            class="fa-brands fa-linkedin text-primary"></i>
+        </a>
+        <a class="text-decoration-none mx-3 mx-sm-2" href="https://wa.me/07046959318"><i
+            class="fa-brands fa-whatsapp text-success"></i>
+        </a>
+      </div>
+
+      <!-- footer -->
+
+      <footer>
+        <div class="footer bg-dark p-3 w-100">
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="text-muted">
+              Copywright &copy; All rights reserved dvooskid.net
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+  </div>
+
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static './assets/js/main.js' %}"></script>
+    <script src="{% static './assets/js/chart1.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff url(/assets/Img/Bounce-Bar-Preloader-1.gif) no-repeat
+    center;
+  z-index: 100;
+}
+
+#preloader img {
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .link__hover > a:hover {
+    color: #fff !important;
+    transform: scale(1.2);
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover {
+    color: #fff;
+  }
+}
+
+

@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about -page</title>
+    <link rel="stylesheet"
+      href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet"
+      href="{% static 'assets/font-awesome/all.min.css' %}" />
+    <link rel="stylesheet"
+      href="{% static 'assets/font-awesome/fontawesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+
+
+    <style>
+      @media only screen and (max-width: 768px) {
+
+        h1 {
+          font-size: 38px;
+        }
+
+        h4,
+        p {
+          font-size: medium;
+        }
+
+      }
+
+    </style>
+
+  </head>
+
+  <body class="bg-black">
+    <!-- preloader -->
+    <div>
+      <img id="preloader"
+        src="{% static 'assets/Img/Bounce-Bar-Preloader-1.gif' %}" alt="">
+    
+    <!-- preloader delay -->
+    <div class="d-flex d-none">
+      <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/">Dvooskid.net</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item link__hover">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item link__hover">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item dropdown link__hover">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/">Home</a></li>
+                <li><a class="dropdown-item" href="about">About</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects">Projects</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end -->
+
+    <div id="container" class="container">
+      <!-- Heading Text -->
+      <h1 class="text-white fw-bolder my-4 pt-3 ">I build value by
+        design.</h1>
+
+      <!-- body text -->
+      <p class="lead text-primary" style="
+          line-height: 1.5 !important;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        ">
+        Hi, am Edet David, am a Fullstack developer with the passion for
+        creating super <br />
+        responsive ,and highly scalable web-apps and software applications.
+        <br />
+        I am currenly an undergraduate in the University of Uyo, Nigera. <br />
+      </p>
+      <h4 class="fst-italic text-white text-decoration-underline">
+        MY HOBBIES
+      </h4>
+      <div class="d-flex">
+        <ul class="text-warning opacity-75">
+          <li>
+            <p class="text-white">Reading</p>
+          </li>
+          <li>
+            <p class="text-white">Singing</p>
+          </li>
+          <li>
+            <p class="text-white">Coding</p>
+          </li>
+          <li>
+            <p class="text-white">Playing games</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer bg-dark p-3 position-fixed bottom-0 w-100">
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="text-muted">
+            Copywright &copy; All rights reserved dvooskid.net
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+    <script src="{% static './assets/js/main.js' %}"></script>
+    <script
+      src="{% static './assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
+
+</html>

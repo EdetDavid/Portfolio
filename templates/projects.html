@@ -1,0 +1,187 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet"
+      href="{% static './assets/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet"
+      href="{% static './assets/font-awesome/all.min.css' %}" />
+    <link rel="stylesheet"
+      href="{% static './assets/font-awesome/fontawesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static './assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static './assets/css/master.css' %}" />
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/chart.js' %}"></script>
+  </head>
+
+  <body class="bg-black">
+    <div>
+      <img id="preloader"
+        src="{% static 'assets/Img/Bounce-Bar-Preloader-1.gif' %}" alt="">
+  
+    <!-- preloader delay -->
+    <div class="d-flex d-none">
+      <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="d-flex d-none">
+      <iframe width="560" height="315"
+        src="{% static 'https://www.youtube.com/embed/KVbrHTRxgsk' %}"
+        title="Youtube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <!-- end -->
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-primary w-100">
+      <div class="container">
+        <a class="navbar-brand" href="/">Dvooskid.net</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item link__hover">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item link__hover">
+              <a class="nav-link" href="about">About</a>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item dropdown link__hover">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/">Home</a></li>
+                <li><a class="dropdown-item" href="about">About</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects">Projects</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end -->
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <body>
+
+      <div class="container mt-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center mx-auto">
+          <!-- heading text -->
+          <h1
+            class="display1 text-success text-center text-uppercase mt-4 mb-4">
+            My
+            Projects</h1>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4   my-3">
+              <div class="card" style="width: 18rem; height: 20rem">
+                <img src="{% static '/assets/images/flexbook.png' %}"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Facebook UI</h5>
+                  <p class="card-text">A real clone of facebook.</p>
+                  <a href='https://flexbook-ui.vercel.app'
+                    class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4   my-3">
+              <div class="card" style="width: 18rem; height: 20rem">
+                <img src="{% static '/assets/images/GPT3.png' %}"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GPT3 </h5>
+                  <p class="card-text">A responsive site built with React Js.
+                  </p>
+                  <a href="#" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4   my-3">
+              <div class="card" style="width: 18rem; height: 20rem">
+                <img src="{% static '/assets/images/Todo.png' %}"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TODO APP </h5>
+                  <p class="card-text">A web application for making todo's
+                  </p>
+                  <a href="#" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4   my-3">
+              <div class="card" style="width: 18rem; height: 20rem">
+                <img src="{% static '/assets/images/THRIVE.png' %}"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thrive Insurance Brokers Limited</h5>
+                  <p class="card-text"> An insurance website</p>
+                  <a href="https://thrivebackend.vercel.app"
+                    class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4   my-3">
+              <div class="card" style="width: 18rem; height: 20rem">
+                <img src="{% static '/assets/images/studybud.png' %}"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Discord chat</h5>
+                  <p class="card-text"> A discord look alike site
+                  </p>
+                  <a href="#" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <!-- footer -->
+      <footer class="mt-5">
+        <div class="footer bg-dark p-3 position-fixed bottom-0 w-100 ">
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="text-muted">
+              Copywright &copy; All rights reserved dvooskid.net
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+      <script
+        src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static './assets/js/main.js' %}"></script>
+      <script src="{% static './assets/js/chart1.js' %}"></script>
+    </body>
+
+</html>
